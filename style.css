@@ -11,7 +11,7 @@ body {
     height: 100%;
     grid-template-rows: 50px 10px 50px;
     align-items: center;
-    border: 2px solid black;
+    border: 2px solid #FF4742;
     border-radius: 10px;
     padding: 10px;
     margin: 1rem;
@@ -40,4 +40,33 @@ body {
   border-radius: 1rem;
   margin-bottom: 4rem;
   list-style-type: none;
+}
+.removeBtn{
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  box-shadow: 11px 15px 36px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 11px 15px 36px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 11px 15px 36px 0px rgba(0,0,0,0.75);
+  float: right;
+  border-radius: 1rem;
+
+}
+.btnAdd:hover,
+.btnAdd:active,
+.removeBtn:hover,
+.removeBtn:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+  transition: 0.5s ease;
+}
+
+.btnAdd{
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  box-shadow: 11px 15px 36px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 11px 15px 36px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 11px 15px 36px 0px rgba(0,0,0,0.75);
+  float: right;
+  border-radius: 1rem;
 }
