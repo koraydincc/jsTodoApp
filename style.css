@@ -1,47 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;800&display=swap');
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Sora', sans-serif;
-  }
-  
-.main {
-    display: grid;
-    height: 100%;
-    grid-template-rows: 50px 10px 50px;
-    align-items: center;
-    border: 2px solid #FF4742;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 1rem;
-  
-}
-  
-  
-  
-#task {
-    display: grid;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-  
-.grid{
-    display: grid;
-    align-items: center;
-    grid-template-rows: repeat(10,50px);
+  margin: 0;
+  padding: 0;
+  font-family: 'Sora', sans-serif;
+  background-color: #F0F0F0;
 }
 
-.listText{
+.main {
+  display: grid;
+  height: 100%;
+  grid-template-rows: 50px auto 50px; /* Değişiklik */
+  align-items: center;
+  border: 2px solid #FF4742;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 1rem;
+}
+
+
+
+#task {
+  display: grid;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+  grid-template-rows: repeat(10, 50px);
+}
+
+.listText {
   padding: 5px;
   border-bottom: 2px solid red;
   border-radius: 1rem;
   margin-bottom: 4rem;
+  font-size: 20px;
   list-style-type: none;
 }
-.removeBtn{
+hr{
+  height: 1rem;
+}
+
+.removeBtn {
   background: #FF4742;
   border: 1px solid #FF4742;
   box-shadow: 11px 15px 36px 0px rgba(0,0,0,0.75);
@@ -49,10 +55,10 @@ body {
   -moz-box-shadow: 11px 15px 36px 0px rgba(0,0,0,0.75);
   float: right;
   border-radius: 1rem;
-
 }
-.btnAdd:hover,
-.btnAdd:active,
+
+button:hover,
+button:active,
 .removeBtn:hover,
 .removeBtn:active {
   background-color: initial;
@@ -61,7 +67,7 @@ body {
   transition: 0.5s ease;
 }
 
-.btnAdd{
+button {
   background: #FF4742;
   border: 1px solid #FF4742;
   box-shadow: 11px 15px 36px 0px rgba(0,0,0,0.75);
@@ -69,4 +75,12 @@ body {
   -moz-box-shadow: 11px 15px 36px 0px rgba(0,0,0,0.75);
   float: right;
   border-radius: 1rem;
+}
+
+
+
+#btnRemoveAll {
+  
+  margin-top: 10px;
+ 
 }

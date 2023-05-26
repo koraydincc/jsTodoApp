@@ -15,17 +15,19 @@
 
   <body>
     <div class="main">
-      <h2>Yapılacaklar Listesi</h2>
-      <hr />
+      <h2>Yapılacaklar Listesi <span id="counter">(0)</span></h2>
+      <div id="date"></div>
+      <hr class="hr">
       <div class="taskAdd" id="taskAdd">
         <div class="input-group">
           <input
             type="text"
             class="form-control"
-            placeholder="Yapılacak bir şey ekleyin"
+            placeholder="Yapılacak bir şeyler ekleyin"
             aria-describedby="button-addon2"
             id="textAdd"
           />
+         
           <button
             class="btnAdd"
             type="button"
@@ -34,14 +36,20 @@
             Ekle
           </button>
         </div>
-       
+         
+        <button id="btnRemoveAll">
+          Tümünü Sil
+        </button>
+      </div>
+    
+      <div class="grid" id="grid">
+        <ul id="list-container">
+          
+        </ul>
+      </div>
+    </div>
+    
    
-    </div>
-    <div class="grid" id="grid">
-      <ul id="list-container">
-        
-      </ul>
-    </div>
       
         
       
